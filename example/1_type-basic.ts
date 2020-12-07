@@ -1,8 +1,8 @@
 // 문자열
-const str: string = 'hello';
+const str1: string = 'hello';
 
 // 숫자
-const num: number = 10;
+const num1: number = 10;
 
 // 배열
 const arr: Array<string> = [];

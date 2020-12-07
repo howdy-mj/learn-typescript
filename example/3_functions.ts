@@ -4,16 +4,16 @@ function sum(a, b) {
 }
 
 // 타입스크립트 함수 선언 - 함수의 매개 변수
-function add(a: number, b: number) {
+function add3_1(a: number, b: number) {
   return a + b;
 }
 
 // 타입스크립트 함수 선언 - 함수의 반환 타입
-function add(a: number, b: number): number {
+function add3_2(a: number, b: number): number {
   return a + b;
 }
 
-// function add(a: number, b: number): string {
+// function add3_3(a: number, b: number): string {
 //   return a + b;
 // }
 

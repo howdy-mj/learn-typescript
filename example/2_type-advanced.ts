@@ -17,10 +17,10 @@ function sayHi(): void {
 }
 
 // 타입 추정 (type assertion)
-let str = '이건 문자열 타입이 됩니다.';
+let str2 = '이건 문자열 타입이 됩니다.';
 
-let num: number;
-num = 'str' as any;
+let num2: number;
+num2 = 'str' as any;
 
 const divElement = document.querySelector('#app');
 divElement.innerHTML;
