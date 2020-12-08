@@ -7,7 +7,7 @@
 // }
 type SumParameter = number;
 
-function sum(a: SumParameter, b: SumParameter) {
+function sum6(a: SumParameter, b: SumParameter) {
   return a + b;
 }
 
@@ -17,15 +17,15 @@ type Person6 = {
   age: number;
 };
 
-function getPerson(): Person6 {
-  // ...
-}
+// function getPerson(): Person6 {
+//   // ...
+// }
 
 // #3
 type Hero = {
   skill: string;
 };
 
-const capt6: Hero = {
-  // skill: 'throwing a shield'
-};
+// const capt6: Hero = {
+//   // skill: 'throwing a shield'
+// };

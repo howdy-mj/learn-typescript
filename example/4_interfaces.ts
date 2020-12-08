@@ -46,7 +46,7 @@ interface Person4 {
   name: string;
   age: number; // 옵셔널 선택자 ? 동일하게 적용 가능
 }
-interface Developer extends Person4 {
+interface Developer4 extends Person4 {
   language: string;
 }
-const joo: Developer = { name: 'joo', age: 20, language: 'ts' };
+const joo4: Developer4 = { name: 'joo', age: 20, language: 'ts' };
