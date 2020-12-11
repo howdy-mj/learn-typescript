@@ -1,10 +1,32 @@
 // 이넘(Enum)
+// 주로 드롭다운 형태의 목록, 예외처리에서 사용
 enum Avengers {
-  Capt,
-  Ironman,
-  Hulk,
+  Capt = 'capt',
+  Ironman = 'ironman',
+  Hulk = 'hulk',
 }
+// 아무 값도 넣지 않았을 때는 숫자가 default 값으로 됨
 const myHero = Avengers.Capt;
+console.log('myHero', myHero);
+
+// enum 활용
+enum Answer {
+  Yes = 'Y',
+  No = 'N',
+}
+
+function askQuestion(answer: Answer) {
+  if (answer === Answer.Yes) {
+    console.log('정답입니다.');
+  }
+  if (answer === Answer.No) {
+    console.log('오답입니다.');
+  }
+}
+askQuestion(Answer.Yes); // 무조건 해당 이넘 값만 넣을 수 있음
+// askQuestion('yes')
+// askQuestion('y')
+// askQuestion('예스')
 
 // any
 let a: any = 'hi';
