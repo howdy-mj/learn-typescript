@@ -107,3 +107,15 @@ class AddressBook {
 }
 
 new AddressBook();
+
+// 타입 단언/추정(assertion)
+var div = document.querySelector('div'); // div: HTMLDivElement | null
+if (div) {
+  // null일 수도 있기 때문에, null이 아님을 보장해줘야함
+  div.innerHTML;
+}
+// 혹은 밑에 처럼
+// div?.innerHTML;
+
+var div2 = document.querySelector('div') as HTMLDivElement; // 단언을 해주는 것
+div2.innerHTML; // 바로 가능

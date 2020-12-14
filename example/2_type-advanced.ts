@@ -29,22 +29,33 @@ askQuestion(Answer.Yes); // 무조건 해당 이넘 값만 넣을 수 있음
 // askQuestion('예스')
 
 // any
-let a: any = 'hi';
-a = 20;
-a = false;
+let a2: any = 'hi';
+a2 = 20;
+a2 = false;
 
 // void
 function sayHi(): void {
   // return 'a';
 }
 
-// 타입 추정 (type assertion)
+// 타입 단언/추정 (type assertion)
+// 타입스크립트보다 개발자가 더 정확할 경우 쓰임
 let str2 = '이건 문자열 타입이 됩니다.';
 
 let num2: number;
 num2 = 'str' as any;
 
+let anything2;
+anything2 = 20;
+anything2 = 'a';
+
+const anything3 = anything2 as string;
+// 그냥 쓰면 any로 추정되지만, string이라고 알려줌으로써 anything3도 string으로 추정(단언)
+// 주로 DOM API 조작할 때 자주 쓰임
+
 const divElement = document.querySelector('#app');
+// 해당 div가 있을 때 체크하고 innerHTML을 하는 것이 안전함
 divElement.innerHTML;
-// const empty = document.querySelector('#app') as null;
+
+const empty = document.querySelector('#app') as null;
 // empty.innerHTML;
