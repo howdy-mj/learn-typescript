@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "target": "ES5",
+    "outDir": "./built",
+    "moduleResolution": "Node" // Promise 때문에
+  },
+  "include": ["./src/**/*"]
+}
