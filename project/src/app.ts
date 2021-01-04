@@ -1,3 +1,6 @@
+import axios from 'axios';
+import * as Chart from 'chart.js';
+
 // utils
 function $(selector: string) {
   return document.querySelector(selector);
@@ -8,7 +11,7 @@ function getUnixTimestamp(date: Date) {
 }
 
 // DOM
-let a: Element | HTMLElement | HTMLParagraphElement;
+// let a: Element | HTMLElement | HTMLParagraphElement;
 const confirmedTotal = $('.confirmed-total') as HTMLSpanElement;
 const deathsTotal = $('.deaths') as HTMLParagraphElement; // return 값에 타입 단언
 const recoveredTotal = $('.recovered') as HTMLParagraphElement;
